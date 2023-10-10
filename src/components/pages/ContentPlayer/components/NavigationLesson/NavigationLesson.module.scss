@@ -1,0 +1,38 @@
+.list_wrapper{
+    text-align:left;
+    position:absolute;
+    width:200px;
+    border:1px solid #cccccc;
+    height:auto;
+    padding:20px;
+    background:white;
+    top:80px;
+    right:0px;
+    
+    }
+    .list_title{
+    
+    }
+    .list{
+        margin:10px 0px;
+        border-bottom:1px solid #cccccc;
+        padding-bottom:10px;
+    }
+    .list_number{
+        font-size: 12px;
+        
+        width: auto;
+        height: 15px;
+        
+        display: block;
+        padding: 5px;
+        font-weight: 700;
+        
+        text-align:left;
+        margin-right:20px;
+    }
+    .list_type{
+        font-size:12px;
+        display: block;
+        margin-left:15px;
+    }
