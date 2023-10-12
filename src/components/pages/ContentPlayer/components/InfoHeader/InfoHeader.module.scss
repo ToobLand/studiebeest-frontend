@@ -1,13 +1,16 @@
+@use '../../../../../variables.scss' as v;
+
 .header_wrapper{
-    background:#d0e6ff;
-    width:1100px;
-    margin-left:250px;
-    margin-right:auto;
+    background: rgb(238,107,85);
+background: linear-gradient(90deg, rgba(238,107,85,1) 0%, rgba(237,102,85,1) 46%, rgba(251,170,88,1) 100%);
     display:block;
     padding:10px 0px;
-    
+    position: sticky;
+    top: 0;
 }
 .list_title{
     display:inline-block;
     margin:0px 30px;
+    color:white;
+    font-weight:500;
 }

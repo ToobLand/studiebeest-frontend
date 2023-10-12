@@ -1,12 +1,11 @@
+@use "../../../../../variables.scss" as v;
+
 .list_wrapper{
 text-align:left;
-position:absolute;
 width:200px;
-border:1px solid #cccccc;
+margin-top:25px;
 height:auto;
-padding:25px;
-background:white;
-top:80px;
+padding:20px;
 
 }
 .list_title{
@@ -17,16 +16,16 @@ top:80px;
 }
 .list_number{
     font-size: 12px;
-    background: #d0e7ff;
+    background: v.$fifthColor;
     width: 15px;
     height: 15px;
     border-radius: 20px;
     display: inline-block;
     padding: 5px;
     font-weight: 700;
-    border: 1px solid #7c9fc7;
     text-align:center;
     margin-right:20px;
+    color:white;
 }
 .list_type{
     font-size:12px;

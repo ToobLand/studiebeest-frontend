@@ -1,5 +1,29 @@
+@use '../../../variables.scss' as v;
+
 .content_wrapper{
-    background:#f0f0f0;
+    background: white;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, v.$thirdColor 100%);
+    
     min-height:100%;
     height: 100%;
+}
+.flex_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: stretch;
+    
+}
+.main{
+flex:1 1 auto;
+}
+.left_menu{
+    max-width:250px;
+    flex:0 0 250px;
+    background:white;
+    min-height:calc(100vh - 80px);
+    position: sticky;
+    top: 39px;
+    align-self: flex-start;
 }
