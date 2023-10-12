@@ -1,0 +1,11 @@
+@use '../../../variables.scss' as v;
+
+.primary_button{
+    font-family: 'Roboto', sans-serif;
+    border-radius:20px;
+    background: linear-gradient(90deg,v.$forthColor 0%, v.$fifthColor 100%);
+    border:none;
+    padding:10px 15px;
+    color:white;
+    font-weight:500;
+}

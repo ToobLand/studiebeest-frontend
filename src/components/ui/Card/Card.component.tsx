@@ -1,7 +1,10 @@
 
 import style from "./Card.module.scss";
 import { Link } from "react-router-dom";
-const Card=(props)=>{
+interface cardProps{
+    className:string;
+}
+const Card=(props:cardProps)=>{
 
     return (
         <div className={props.className}>
