@@ -1,7 +1,6 @@
+import Landingpage from './Landingspage/Landingspage.component';
+import ContentPlayer from './ContentPlayer/ContentPlayer.component';
+import Login from './Login/Login.component';
+import Library from './Cms/Library/Library.component';
 
-import Landingpage from "./Landingspage/Landingspage.component";
-import ContentPlayer from "./ContentPlayer/ContentPlayer.component";
-
-export {
-	Landingpage, ContentPlayer,
-};
+export { Landingpage, ContentPlayer, Login, Library };

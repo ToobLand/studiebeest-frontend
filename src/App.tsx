@@ -1,38 +1,42 @@
-import { useState } from 'react'
-
-import { createBrowserHistory } from "history";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {
-	BrowserRouter as Router,
-	Route,
-	useLocation,
-	Routes,
-	useParams,
-} from "react-router-dom";
-import {
-	Landingpage, ContentPlayer
-} from "./components/pages/index";
-export const history = createBrowserHistory();
-
+	Landingpage,
+	ContentPlayer,
+	Login,
+	Library,
+} from './components/pages/index';
+import ProtectedRoute, {
+	ProtectedRouteProps,
+} from './components/utils/ProtectedRoute/ProtectedRoute.component';
 function AppWrapper() {
 	return (
-		<Router history={history}>
-				<App />
-        
+		<Router>
+			<App />
 		</Router>
 	);
 }
 function App() {
-
+	const defaultProtectedRouteProps: Omit<ProtectedRouteProps, 'outlet'> = {
+		token: localStorage.getItem('token'),
+		redirect: '/login/',
+	};
 	return (
-		
-			<div className="App">
-       
-				<Routes>
-          <Route path="/content" element={<ContentPlayer/>} />
-          <Route path="/" element={<Landingpage/>} />
-				</Routes>
-			</div>
-		
+		<div className='App'>
+			<Routes>
+				<Route path='/content' element={<ContentPlayer />} />
+				<Route path='/' element={<Landingpage />} />
+				<Route path='/login' element={<Login />} />
+				<Route
+					path='/cms/'
+					element={
+						<ProtectedRoute
+							{...defaultProtectedRouteProps}
+							outlet={<Library />}
+						/>
+					}
+				/>
+			</Routes>
+		</div>
 	);
 }
 

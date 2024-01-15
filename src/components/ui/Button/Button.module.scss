@@ -3,7 +3,9 @@
 .primary_button{
     font-family: 'Roboto', sans-serif;
     border-radius:20px;
-    background: linear-gradient(90deg,v.$forthColor 0%, v.$fifthColor 100%);
+   /* background: linear-gradient(90deg,v.$forthColor 0%, v.$fifthColor 100%);*/
+    background: #ED6B54;
+    font-weight:500;
     border:none;
     padding:10px 15px;
     color:white;

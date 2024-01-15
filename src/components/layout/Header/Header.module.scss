@@ -2,12 +2,12 @@
     background-color:white;
     height:80px;
     width:100%;
-    box-shadow: 0 .2rem 2rem rgba(0,0,0,.16);
+    box-shadow: 0 1px 8px rgba(0,0,0,.05);
     position:relative;
     z-index:10;
 }
 .menu_button{
-    padding:20px;
+    
     font-size:16px;
     color:black;
     display:inline-block;
@@ -15,7 +15,7 @@
 
 }
 .menu_wrapper{
-    width:1100px;
+    width:1400px;
     margin-left:auto;
     margin-right:auto;
     padding-top:20px;

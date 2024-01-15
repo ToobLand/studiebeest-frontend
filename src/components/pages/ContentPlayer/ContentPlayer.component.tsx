@@ -3,7 +3,7 @@ import {
 	Header
 } from "../../layout/index";
 import {
-	NavigationContent,NavigationLesson, InfoHeader, Video, Text
+	NavigationContent,NavigationLesson, InfoHeader, Video, Text, Exercise
 } from "./components/index";
 
 const ContentPlayer = ()=>{
@@ -14,14 +14,16 @@ const ContentPlayer = ()=>{
         <div className={style.flex_wrapper}>
         <div className={style.left_menu}>
             <NavigationContent />
-            <NavigationLesson />
         </div>
         <div className={style.main}> 
            
             <div className={style.content}>
                 <Video />
                 <Text />
-            </div>
+                <Exercise />
+            </div><br/><br/>
+           <b style={{fontSize: "20px"}}> previous lesson - Next lesson</b>
+            <br/><br/>
         </div>
         </div>
     </div>);

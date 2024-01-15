@@ -1,16 +1,48 @@
 @use '../../../../../variables.scss' as v;
-.content_wrapper{
-    text-align:left;
-    margin:50px 50px;
-    padding:40px;
-    background:white;
+.content_wrapper {
+	text-align: left;
+	margin: 0px 30px;
+	padding: 40px;
+	background: white;
+	line-height: 22px;
+	font-size: 14px;
 }
-.iframe_style{
-    border-radius:20px;
-    padding:10px;
+p {
+	line-height: 22px;
+	font-size: 14px;
+}
+h1 {
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+}
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+}
+h3 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #333333;
+}
+h4 {
+	font-size: 14px;
+	font-weight: 500;
+	color: #333333;
+}
+.iframe_style {
+	/*    border-radius:20px; 
+   padding:10px;
     background: rgb(238,107,85);
-background: linear-gradient(90deg, rgba(238,107,85,1) 0%, rgba(237,102,85,1) 46%, rgba(251,170,88,1) 100%);
-display:block;
-margin:50px auto;
-box-shadow: 1px 1px 6px #b4b4b4;
+    background: linear-gradient(90deg, rgba(238,107,85,1) 0%, rgba(237,102,85,1) 46%, rgba(251,170,88,1) 100%);
+   */
+	display: block;
+	margin: 0px auto;
+	width: 940px;
+	height: 530px;
+	border-radius: 20px;
+}
+.mc {
+	width: 600px;
 }

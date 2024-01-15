@@ -3,14 +3,18 @@ import {Button} from "../../../../ui/index";
 
 const NavigationContent = ()=>{
     return (<div className={style.list_wrapper}>
-        <span className={style.title}>Auteur:</span><br/>
-        <span className={style.title2}>Frodo Baggins</span><br/><br/>
-        <span className={style.title}>Inhoud:</span>
-        <span className={style.list_title}></span>
-        <div className={style.list}><span className={style.list_number}>1.</span><span className={style.list_type}>Video</span></div>
-        <div className={style.list}><span className={style.list_number}>2.</span><span className={style.list_type}>Tekst</span></div>
-        <div className={style.list}><span className={style.list_number}>3.</span><span className={style.list_type}>Opdracht</span></div>        
-        <div className={style.list}><Button title="Vraag of opmerking plaatsen" /></div>        
+        <div className={style.author_wrapper}><span className={style.title2}>Auteur: <span className={style.author}>Frodo Baggins</span></span></div>
+        <div className={style.content_wrapper}>
+        <span className={style.title}>inhoud:</span>
+        <div className={style.list_active}><span className={style.list_number}>1.</span><span  className={style.list_type}>Introduction</span></div>
+        <div className={style.list}><span className={style.list_number}>2.</span><span className={style.list_type}>Video</span></div>
+        <div className={style.list}><span className={style.list_number}>3.</span><span  className={style.list_type}>Text theory: Beginselen van de stelling van Pythagoras</span></div>
+        <div className={style.list}><span className={style.list_number}>4.</span><span className={style.list_type}>Multiple choice exercise</span></div>        
+        <br/><br/><Button title="Vragen en opmerkingen" /> 
+        </div> 
+        <div className={style.button_wrapper}> 
+        <Button title="Vorige les" /> <Button title="Volgende les" />
+        </div>
     </div>);
 }
 

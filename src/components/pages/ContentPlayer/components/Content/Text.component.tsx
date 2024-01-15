@@ -3,7 +3,7 @@ const Text = () => {
 
     return (
         <div className={style.content_wrapper}>
-        <h2>2. Tekst</h2>
+        <h2>3. Text theory: Beginselen van de stelling van Pythagoras</h2>
         <h3>De stelling van Pythagoras</h3>
         Om met de stelling van Pythagoras te kunnen werken, heb je de volgende basiskennis nodig.
 <br/><br/>

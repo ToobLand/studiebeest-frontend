@@ -1,36 +1,81 @@
 @use '../../../../../variables.scss' as v;
 
-.header_wrapper{
-    background: rgb(238,107,85);
-background: linear-gradient(90deg, rgba(238,107,85,1) 0%, rgba(237,102,85,1) 46%, rgba(251,170,88,1) 100%);
-    display:block;
-    padding:10px 0px;
-    position: sticky;
-    top: 0;
+.header_wrapper {
+	background: white;
+	border-radius: 20px;
+	display: block;
+	padding: 10px 0px;
+	position: sticky;
+	top: 0;
+	max-width: 1400px;
+	height: 50px;
+	margin: 30px auto;
+	margin-top: 50px;
 }
-.list_title{
-    display:inline-block;
-    margin:0px 30px;
-    color:white;
-    font-weight:500;
+.list_title {
+	display: inline-block;
+	margin: 0px 20px;
+	font-weight: 500;
 }
-.header_flex{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width:1100px;
-    margin:0px auto;
+.header_flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-top: 5px;
 }
-.header_left{
-    text-align:left;
-    flex:1 0 500px;
+.header_left {
+	text-align: left;
+	flex: 1 0 auto;
+	margin-left: 30px;
+	display: flex;
+}
+.header_left .list_title {
+	margin-left: 10px;
+}
+.header_right {
+	text-align: right;
+	flex: 1 1 150px;
 
+	font-size: 20px;
+	color: #cccccc;
+	padding-right: 30px;
+	display: flex;
+	text-align: right;
+	justify-content: flex-end;
 }
-.header_left .list_title{
-    margin-left:10px;
+.right_right {
+	padding-top: 10px;
 }
-.header_right{
-    text-align:right;
-    flex:1 1 500px;
-    
+.right_left {
+	padding-top: 10px;
+	border-right: 1px solid #cccccc;
+	padding-right: 30px;
+	margin-right: 10px;
+}
+.module_wrapper {
+	background: #ecf3f5;
+	color: #ed6b54;
+	display: inline-block;
+	max-width: 350px;
+	border-radius: 10px;
+	padding: 12px 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.lesson_wrapper {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	padding-left: 30px;
+	margin-top: 10px;
+}
+.module_title {
+	max-width: 300px;
+	float: left;
+}
+.module_arrow {
+	max-width: 20px;
+	float: right;
+	margin-right: -30px;
+	color: #555555;
 }
