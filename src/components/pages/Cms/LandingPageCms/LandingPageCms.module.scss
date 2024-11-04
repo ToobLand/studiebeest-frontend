@@ -1,0 +1,73 @@
+/* App.css */
+body {
+	margin: 0;
+	font-family: 'Arial', sans_serif;
+}
+
+.app_container {
+	max-width: 800px;
+	margin: 0 auto;
+	background: linear_gradient(to right, #5f27cd, #341f97);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	color: #fff;
+}
+
+.header_container {
+	background: linear_gradient(to right, #3498db, #1abc9c);
+	padding: 20px;
+	text-align: center;
+}
+
+.site_title {
+	margin: 0;
+	font-size: 36px;
+}
+
+.nav_container {
+	background: linear_gradient(to right, #3498db, #1abc9c);
+	padding: 10px;
+}
+
+.nav_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.nav_item {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/* Button Styles */
+.nav_link {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn_create {
+	background-color: #3498db;
+}
+
+.btn_create:hover {
+	background-color: #1a608c;
+}
+
+.btn_analytics {
+	background-color: #1abc9c;
+}
+
+.btn_analytics:hover {
+	background-color: #128263;
+}
+
+.content_container {
+	padding: 20px;
+}

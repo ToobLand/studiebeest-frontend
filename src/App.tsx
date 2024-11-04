@@ -3,6 +3,7 @@ import {
 	Landingpage,
 	ContentPlayer,
 	Login,
+	LandingPageCms,
 	Library,
 } from './components/pages/index';
 import ProtectedRoute, {
@@ -28,6 +29,15 @@ function App() {
 				<Route path='/login' element={<Login />} />
 				<Route
 					path='/cms/'
+					element={
+						<ProtectedRoute
+							{...defaultProtectedRouteProps}
+							outlet={<LandingPageCms />}
+						/>
+					}
+				/>
+				<Route
+					path='/cms/library'
 					element={
 						<ProtectedRoute
 							{...defaultProtectedRouteProps}

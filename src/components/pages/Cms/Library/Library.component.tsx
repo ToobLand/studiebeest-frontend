@@ -1,8 +1,8 @@
-import CreateLesson from './components/CreateLesson/CreateLesson.module';
+import ModuleLesson from './components/ModuleLesson/ModuleLesson.component';
 const Library = () => {
 	return (
 		<div>
-			<CreateLesson />
+			<ModuleLesson />
 		</div>
 	);
 };
